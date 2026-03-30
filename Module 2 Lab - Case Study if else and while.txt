@@ -1,0 +1,29 @@
+# Name: Joseph Daniels
+# File Name: student_gpa_app.py
+# Description: This program accepts student names and GPAs and determines
+# whether each student qualifies for the Dean's List or the Honor Roll.
+# The program stops when the last name 'ZZZ' is entered.
+
+while True:
+    last_name = input("Enter student's last name (type ZZZ to quit): ")
+
+    if last_name == "ZZZ":
+        print("Program ended.")
+        break
+
+    first_name = input("Enter student's first name: ")
+
+    try:
+        gpa = float(input("Enter student's GPA: "))
+    except ValueError:
+        print("Invalid GPA. Please enter a numeric value.")
+        continue
+
+    if gpa >= 3.5:
+        print(f"{first_name} {last_name} has made the Dean's List.")
+    elif gpa >= 3.25:
+        print(f"{first_name} {last_name} has made the Honor Roll.")
+    else:
+        print(f"{first_name} {last_name} did not qualify for Dean's List or Honor Roll.")
+
+    print()
