@@ -1,0 +1,64 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1bf29b11-01f7-4292-bdaa-28837d068372",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 7.4 Create the list\n",
+    "things = [\"mozzarella\", \"cinderella\", \"salmonella\"]\n",
+    "\n",
+    "# 7.5 Capitalize the person (cinderella) and print\n",
+    "things[1] = things[1].capitalize()\n",
+    "print(\"After capitalizing person:\", things)\n",
+    "\n",
+    "# Yes — it DID change the element in the list because we reassigned it.\n",
+    "\n",
+    "# 7.6 Make the cheesy element (mozzarella) uppercase and print\n",
+    "things[0] = things[0].upper()\n",
+    "print(\"After making cheese uppercase:\", things)\n",
+    "\n",
+    "# 7.7 Delete the disease element (salmonella) and print\n",
+    "del things[2]\n",
+    "print(\"After deleting disease:\", things)\n",
+    "\n",
+    "\n",
+    "# 9.1 Define function good()\n",
+    "def good():\n",
+    "    return ['Harry', 'Ron', 'Hermione']\n",
+    "\n",
+    "\n",
+    "# 9.2 Define generator function get_odds()\n",
+    "def get_odds():\n",
+    "    for number in range(10):\n",
+    "        if number % 2 != 0:\n",
+    "            yield number\n",
+    "\n",
+    "\n",
+    "# Print result of good()\n",
+    "print(\"\\nGood function output:\", good())\n",
+    "\n",
+    "# Find and print the third odd number\n",
+    "count = 0\n",
+    "for odd in get_odds():\n",
+    "    count += 1\n",
+    "    if count == 3:\n",
+    "        print(\"Third odd number:\", odd)\n",
+    "        break"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "",
+   "name": ""
+  },
+  "language_info": {
+   "name": ""
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
