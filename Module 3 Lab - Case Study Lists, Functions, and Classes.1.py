@@ -1,3 +1,10 @@
+# Name: Joseph Daniels
+# File Name: vehicle_automobile_app.py
+# Description: This program defines a Vehicle superclass and an Automobile subclass.
+# It prompts the user to enter details about a car, including year, make, model,
+# number of doors, and roof type. The program then creates an Automobile object
+# and displays the entered vehicle information.
+
 # Superclass
 class Vehicle:
     def __init__(self, vehicle_type):
