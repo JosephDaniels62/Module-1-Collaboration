@@ -7,6 +7,13 @@
    "metadata": {},
    "outputs": [],
    "source": [
+    "# Name: Joseph Daniels\n",
+    "# File Name: list_and_functions_app.ipynb\n",
+    "# Description: This program demonstrates list manipulation and function usage in Python.\n",
+    "# It performs operations such as modifying list elements, deleting items, defining a\n",
+    "# function that returns a list, and creating a generator to produce odd numbers.\n",
+    "# It also finds and prints the third odd number from a generated sequence.\n",
+    "\n",
     "# 7.4 Create the list\n",
     "things = [\"mozzarella\", \"cinderella\", \"salmonella\"]\n",
     "\n",
@@ -52,11 +59,11 @@
  ],
  "metadata": {
   "kernelspec": {
-   "display_name": "",
-   "name": ""
+   "display_name": "Python 3",
+   "name": "python3"
   },
   "language_info": {
-   "name": ""
+   "name": "python"
   }
  },
  "nbformat": 4,
